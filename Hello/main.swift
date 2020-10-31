@@ -34,7 +34,7 @@ func printContactList(_ listCont: String){
         let tmpContact = contact.components(separatedBy: ":")
         contactList[tmpContact[0]] = tmpContact[1]
     }
-    contactList.sorted(by: {(a, b)->Bool in return a.value < b.value}).map({(a) in print(a.key + ": " + a.value)})
+    contactList.sorted(by: {(a, b)->Bool in return a.value < b.value}).forEach({(a) in print(a.key + ": " + a.value)})
 }
 
 
